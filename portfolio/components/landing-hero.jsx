@@ -1,6 +1,7 @@
 'use client';
 
 import TypewriterComponent from 'typewriter-effect';
+
 const LandingHero = () => {
   return (
     <div className="dark:text-white text-black font-bold  text-center space-y-5 min-h-[300px]">
