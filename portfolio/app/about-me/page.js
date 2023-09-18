@@ -1,0 +1,147 @@
+'use client';
+
+import Lottie from 'lottie-react';
+import blockchain from '@/lottiefiles/blockchain.json';
+import webdev from '@/lottiefiles/webdev.json';
+import productengineer from '@/lottiefiles/productengineer.json';
+import testengineer from '@/lottiefiles/testengineer.json';
+import university from '@/lottiefiles/university.json';
+
+const AboutPage = () => {
+  return (
+    <div className="p-4 md:p-8 flex flex-col">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center">
+          My Journey
+        </h1>
+        <p className="text-lg mb-2">
+          Full Stack Developer | Product Engineer | Web3 Enthusiast | Test
+          Engineer
+        </p>
+      </div>
+
+      <div>
+        <p className="my-6">
+          Hello! I'm Youssef, a lifelong learner whose passion for development
+          and engineering has led me on a diverse and exciting journey. From the
+          dynamic world of blockchain to the intricate designs of electrical
+          engineering, I've always sought to innovate and make an impact.
+        </p>
+      </div>
+
+      <div className="flex">
+        <Lottie animationData={webdev} />
+        <div className="px-4 flex flex-col justify-center">
+          <h3 className="text-xl md:text-2xl font-semibold my-4">
+            Full Stack Web Developer
+          </h3>
+          <p>
+            After Lostboy, my love for development led me to the University of
+            Central Florida once again. This time, I completed a Full Stack Web
+            Development certification, further honing my skills. This allowed me
+            to continue learning and developing using different languages and
+            packages. I am currently using my knowledge as a part time full
+            stack learning assistant where I help students troubleshoot through
+            errors and explain full stack concepts.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="flex flex-col justify-center">
+          <h2 className="text-xl md:text-2xl font-semibold my-4 ">
+            Web3 Enthusiast
+          </h2>
+          <h3 className="font-bold">Lostboy: A Web3 Startup</h3>
+          <p>
+            Venturing into the entrepreneurial world, I co-founded Lostboy.
+            Lostboy is a web3 brand that revolved around mental health awareness
+            and music. Here, I immersed myself in the Ethereum ecosystem,
+            leading the development of multiple ERC collections and pioneering
+            unique digital experiences. Our community grew to over 30k
+            followers, and I realized how much I loved creating apps for users
+            to enjoy.
+          </p>
+        </div>
+        <Lottie animationData={blockchain} />
+      </div>
+
+      <h2 className="text-xl md:text-2xl font-semibold">
+        Before That...Electrical Engineering
+      </h2>
+
+      <div className="flex md:my-8">
+        <Lottie animationData={productengineer} className="w-[400px] mt-10" />
+
+        <div className="flex flex-col justify-center">
+          <h3 className="font-bold">Product Engineer at Honeywell</h3>
+          <p>
+            As a Product engineer, for two years, I collaborated with diverse
+            teams, ensuring my products transitioned smoothly from design to
+            full-scale production. I also developed a Python tool that tracked
+            product lifecycles, earning me a Green Belt Certification.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="mt-10 flex flex-col justify-center">
+          <h3 className="font-bold">Test Engineer at Micross</h3>
+          <p>
+            I began my engineering career as a Test Engineer. I designed
+            hardware interface board schematics and developed test programs for
+            digital and analog ICs. I was also the backup engineer for memory
+            testing, ensuring test programs are running smoothly, and
+            troubleshooting discrepancies. One of my proudest achievements was
+            porting test programs from a manual tester to a fully automated
+            tester, which led to a 99% savings in test time.
+          </p>
+        </div>
+        <Lottie animationData={testengineer} className="" />
+      </div>
+
+      <div className="flex space-x-7 w-full px-4 md:px-8">
+        <Lottie animationData={university} />
+        <div className="flex flex-col justify-center ml-8">
+          <h2 className="text-xl md:text-2xl font-semibold my-4">
+            Laying the Foundation
+          </h2>
+          <div className="mb-6">
+            <h3 className="font-bold">University of Central Florida</h3>
+            <p>Bachelor Degree in Electrical Engineering</p>
+            <h3 className="font-bold">University of Central Florida</h3>
+            <p>Full Stack Web Developement Certification</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-xl md:text-2xl font-semibold my-4">
+          Looking Ahead
+        </h2>
+        <p>
+          With a diverse background spanning electrical engineering, blockchain,
+          and full-stack development, I am poised to contribute meaningfully to
+          any team. My experiences have not only equipped me with a broad skill
+          set but have also instilled in me a unique perspective on
+          problem-solving and innovation.
+        </p>
+        <p className="mb-6">
+          Continuous learning is at the core of my professional ethos. I
+          actively seek opportunities to further develop my skills and stay
+          updated with the latest technological advancements. Collaborating with
+          peers and learning from their expertise is something I value
+          immensely, as it enriches my own understanding and approach.
+        </p>
+        <p>
+          Given my track record, adaptability, and commitment to excellence, I
+          am confident in my ability to deliver significant value in any role. I
+          am eager to take on challenges that push the boundaries of what's
+          possible and to work alongside teams that share this ambition.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default AboutPage;
