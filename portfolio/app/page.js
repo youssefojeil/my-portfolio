@@ -20,7 +20,7 @@ export default function Home() {
       <div className="w-1/2 flex justify-center items-center ">
         <div className="rounded-xl shadow-xl flex justify-center items-center ">
           <Image
-            src="/profile.jpg"
+            src="/profile.png"
             alt="youssef"
             width={300}
             height={300}

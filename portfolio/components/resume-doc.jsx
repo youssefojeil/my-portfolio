@@ -18,8 +18,8 @@ const ResumeDoc = () => (
         <Image
           src="/resume.png"
           alt="resume"
-          width={300}
-          height={300}
+          width={600}
+          height={600}
           className="border-none rounded-xl transition hover:scale-105 "
         />
       </Link>
