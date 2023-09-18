@@ -20,17 +20,17 @@ export function MainNav({ className, ...props }) {
         {...props}
       >
         <div>
-          <Avatar>
-            <AvatarImage src="" />
+          <Avatar className="w-[100px] h-[100px]">
+            <AvatarImage src="/profile.JPG" alt="profile pic" />
             <AvatarFallback>YO</AvatarFallback>
           </Avatar>
         </div>
 
-        <div className="flex  items-center space-x-3 md:space-x-6 pr-2">
+        <div className="flex items-center space-x-3 md:space-x-6 pr-2 ">
           <Link
             href="/"
             className={cn(
-              'text-sm font-medium transition-colors hover:text-primary',
+              'text-md  transition-colors hover:text-primary font-bold',
               pathname === '/' ? 'text-primary' : 'text-muted-foreground'
             )}
           >
@@ -39,7 +39,7 @@ export function MainNav({ className, ...props }) {
           <Link
             href="/about-me"
             className={cn(
-              'text-sm font-medium transition-colors hover:text-primary',
+              'text-md font-bold transition-colors hover:text-primary',
               pathname === '/about-me'
                 ? 'text-primary'
                 : 'text-muted-foreground'
@@ -50,7 +50,7 @@ export function MainNav({ className, ...props }) {
           <Link
             href="/projects"
             className={cn(
-              'text-sm font-medium transition-colors hover:text-primary',
+              'text-md font-bold transition-colors hover:text-primary',
               pathname === '/projects'
                 ? 'text-primary'
                 : 'text-muted-foreground'
@@ -61,7 +61,7 @@ export function MainNav({ className, ...props }) {
           <Link
             href="/resume"
             className={cn(
-              'text-sm font-medium transition-colors hover:text-primary',
+              'text-md font-bold transition-colors hover:text-primary',
               pathname === '/resume' ? 'text-primary' : 'text-muted-foreground'
             )}
           >
