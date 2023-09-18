@@ -1,31 +1,31 @@
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import Image from 'next/image';
+import Link from 'next/link';
 
-// Create styles
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: 'row',
-    backgroundColor: '#E4E4E4',
-  },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
-  },
-});
+import { ArrowBigDownDash } from 'lucide-react';
 
 // Create Document Component
 const ResumeDoc = () => (
-  <Document file="../extra/YoussefOjeil-Resume-2023.pdf">
-    <Page size="A4" style={styles.page}>
-      {/* <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
-      </View> */}
-    </Page>
-  </Document>
+  <div className="flex flex-col  p-6">
+    <div className="flex flex-col items-center">
+      <h1 className="text-center">View Resume</h1>
+      <ArrowBigDownDash className="mb-2" />
+      <Link
+        href="https://drive.google.com/file/d/1oF8nqe7UWYPFACxZ5TPemxBs50QHNTa5/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src="/resume.png"
+          alt="resume"
+          width={300}
+          height={300}
+          className="border-none rounded-xl transition hover:scale-105 "
+        />
+      </Link>
+    </div>
+    <div></div>
+  </div>
 );
 
 export default ResumeDoc;
