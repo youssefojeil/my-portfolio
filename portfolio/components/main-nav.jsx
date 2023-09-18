@@ -20,8 +20,8 @@ export function MainNav({ className, ...props }) {
         {...props}
       >
         <div>
-          <Avatar className="w-[100px] h-[100px]">
-            <AvatarImage src="/profile.JPG" alt="profile pic" />
+          <Avatar className="w-[60px] h-[60px]">
+            <AvatarImage src="/profile.jpg" alt="profile pic" />
             <AvatarFallback>YO</AvatarFallback>
           </Avatar>
         </div>
