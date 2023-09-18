@@ -11,11 +11,11 @@ const LandingHero = () => {
           <TypewriterComponent
             options={{
               strings: [
-                'Cofounder.',
                 'Full Stack Web Developer.',
                 'Electrical Engineer.',
-                'Solidity Developer',
                 'Full Stack Learning Assistant.',
+                'Cofounder',
+                'Solidity Developer',
               ],
               autoStart: true,
               loop: true,
@@ -24,7 +24,8 @@ const LandingHero = () => {
         </div>
       </div>
       <div className="text-sm md:text-xl font-light text-zinc-400">
-        Feel free to hang around and learn more about me!
+        Feel free to explore my website to learn more about myself and my
+        experiences!
       </div>
     </div>
   );
