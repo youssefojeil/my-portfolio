@@ -23,12 +23,11 @@ const ProjectPage = () => {
 
         <ProjectCard
           title="Oyster"
-          description="Card Description"
-          githubLink="https://github.com/youssefojeil/thirdweb-auth/tree/main"
-          websiteLink="https://dashboard.lostboy.io/"
+          description="A MERN application using GraphQL to track live NFT data, allows users to signup and login to unlock extra functionalities such as creating projects to collaborate with other users, create a personalized NFT watchlist and connect their MetaMask wallet using RainbowKit, Wagmi & ethers to display their NFTs"
+          imgSrc="/oyster-test.png"
+          githubLink="https://github.com/youssefojeil/Oyster"
+          websiteLink="https://immense-refuge-82677.herokuapp.com/"
         />
-
-        <ProjectCard title="Cryptofolio" description="Card Description" />
       </div>
     </div>
   );
