@@ -11,7 +11,7 @@ const ResumeDoc = () => (
       <h1 className="text-center">View Resume</h1>
       <ArrowBigDownDash className="mb-2" />
       <Link
-        href="https://drive.google.com/file/d/1oF8nqe7UWYPFACxZ5TPemxBs50QHNTa5/view?usp=sharing"
+        href="https://drive.google.com/file/d/1tqIeX8FS6HFMaaG-XlUPvQvQh6m8bVEr/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer"
       >
