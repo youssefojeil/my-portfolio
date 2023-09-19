@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import MobileSidebar from './mobile-sidebar';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { cn } from '@/lib/utils';
 
@@ -20,17 +21,18 @@ export function MainNav({ className, ...props }) {
         {...props}
       >
         <div>
-          <Avatar className="w-[60px] h-[60px]">
+          <Avatar className="hidden md:block md:w-[60px] md:h-[60px]">
             <AvatarImage src="/profile.png" alt="profile pic" />
             <AvatarFallback>YO</AvatarFallback>
           </Avatar>
+          <MobileSidebar />
         </div>
 
-        <div className="flex items-center space-x-3 md:space-x-6 pr-2 ">
+        <div className=" hidden md:flex items-center space-x-3 md:space-x-6 pr-2 ">
           <Link
             href="/"
             className={cn(
-              'text-md  transition-colors hover:text-primary font-bold',
+              'md:text-base  transition-colors hover:text-primary font-bold',
               pathname === '/' ? 'text-primary' : 'text-muted-foreground'
             )}
           >
@@ -39,7 +41,7 @@ export function MainNav({ className, ...props }) {
           <Link
             href="/about-me"
             className={cn(
-              'text-md font-bold transition-colors hover:text-primary',
+              'md:text-base font-bold transition-colors hover:text-primary',
               pathname === '/about-me'
                 ? 'text-primary'
                 : 'text-muted-foreground'
@@ -50,7 +52,7 @@ export function MainNav({ className, ...props }) {
           <Link
             href="/projects"
             className={cn(
-              'text-md font-bold transition-colors hover:text-primary',
+              'md:text-base font-bold transition-colors hover:text-primary',
               pathname === '/projects'
                 ? 'text-primary'
                 : 'text-muted-foreground'
@@ -61,15 +63,15 @@ export function MainNav({ className, ...props }) {
           <Link
             href="/resume"
             className={cn(
-              'text-md font-bold transition-colors hover:text-primary',
+              'md:text-base font-bold transition-colors hover:text-primary',
               pathname === '/resume' ? 'text-primary' : 'text-muted-foreground'
             )}
           >
             Resume
           </Link>
-          <div>
-            <ThemeToggle />
-          </div>
+        </div>
+        <div>
+          <ThemeToggle />
         </div>
       </nav>
       <hr />
