@@ -3,16 +3,9 @@ import LandingHero from '@/components/landing-hero';
 
 export default function Home() {
   return (
-    // <main className="flex h-full max-w-full flex-wrap space-x-20 px-24 py-48">
-    //   <LandingHero />
-
-    //   <div className="w-96 rounded-xl border-black border flex justify-center items-center">
-    //     <Image src="/profile.JPG" alt="youssef" width={300} height={300} />
-    //   </div>
-    // </main>
-    <main className="flex items-center space-x-20 px-24 py-44">
+    <main className="flex items-center space-x-4 md:space-x-20 md:px-24 pt-24 md:py-44">
       {/* Landing Hero (Left Side) */}
-      <div className="w-1/2 flex justify-center items-center pt-14">
+      <div className="w-1/2 flex justify-center items-center  md:pt-14">
         <LandingHero />
       </div>
 
