@@ -3,7 +3,7 @@ import ProjectCard from '@/components/project-card';
 const ProjectPage = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="px-20 mt-10 mb-6 grid grid-cols-1 justify-center text-center w-full space-y-8 max-w-4xl">
+      <div className="md:px-20 mt-10 mb-6 grid grid-cols-1 justify-center text-center w-full space-y-8 max-w-4xl">
         <ProjectCard
           title="LOSTBOY Dashboard"
           description="A personal dashboard that integrates web3auth and sign-in with Ethereum(SIWE), enabling users to view all their Lostboy digital assets from various collections within a single wallet. It also provides specialized features for specific owned collections."

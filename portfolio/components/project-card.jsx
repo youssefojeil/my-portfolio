@@ -27,7 +27,7 @@ const ProjectCard = ({
       </CardHeader>
       <CardContent>
         {imgSrc && (
-          <div className="h-[400px] flex relative overflow-hidden rounded-xl">
+          <div className=" h-[200px] md:h-[400px] flex relative overflow-hidden rounded-xl">
             <Image
               src={imgSrc}
               layout="fill"
