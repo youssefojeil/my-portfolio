@@ -1,5 +1,7 @@
 'use client';
 
+import { useRef, useCallback } from 'react';
+
 import Lottie from 'lottie-react';
 import blockchain from '@/lottiefiles/blockchain.json';
 import webdev from '@/lottiefiles/webdev.json';
@@ -9,15 +11,49 @@ import university from '@/lottiefiles/university.json';
 import future from '@/lottiefiles/future.json';
 
 const AboutPage = () => {
+  const fullStackRef = useRef(null);
+  const web3Ref = useRef(null);
+  const testEngineerRef = useRef(null);
+  const productEngineerRef = useRef(null);
+
+  const handleScrollTo = useCallback((ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  }, []);
+
   return (
     <div className="p-4 md:p-8 flex flex-col">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center">
           My Journey
         </h1>
-        <p className="text-lg mb-2">
-          Full Stack Developer | Product Engineer | Web3 Enthusiast | Test
-          Engineer
+        <p className="text-center text-lg mb-2">
+          <span
+            onClick={() => handleScrollTo(fullStackRef)}
+            className="cursor-pointer "
+          >
+            Full Stack Developer
+          </span>{' '}
+          |{' '}
+          <span
+            onClick={() => handleScrollTo(web3Ref)}
+            className="cursor-pointer"
+          >
+            Web3 Enthusiast
+          </span>{' '}
+          |{' '}
+          <span
+            onClick={() => handleScrollTo(productEngineerRef)}
+            className="cursor-pointer"
+          >
+            Product Engineer
+          </span>{' '}
+          |{' '}
+          <span
+            onClick={() => handleScrollTo(testEngineerRef)}
+            className="cursor-pointer"
+          >
+            Test Engineer
+          </span>
         </p>
       </div>
 
@@ -30,7 +66,7 @@ const AboutPage = () => {
         </p>
       </div>
 
-      <div className="flex">
+      <div className="flex" ref={fullStackRef}>
         <Lottie animationData={webdev} />
         <div className="px-4 flex flex-col justify-center">
           <h3 className="text-xl md:text-2xl font-semibold my-4">
@@ -48,7 +84,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex " ref={web3Ref}>
         <div className="flex flex-col justify-center">
           <h2 className="text-xl md:text-2xl font-semibold my-4 ">
             Web3 Enthusiast
@@ -67,11 +103,11 @@ const AboutPage = () => {
         <Lottie animationData={blockchain} />
       </div>
 
-      <h2 className="text-xl md:text-2xl font-semibold">
+      <h2 className="my-4 text-xl md:text-2xl font-semibold">
         Before That...Electrical Engineering
       </h2>
 
-      <div className="flex md:my-8">
+      <div className="flex md:my-8" ref={productEngineerRef}>
         <Lottie animationData={productengineer} className="w-[400px] mt-10" />
 
         <div className="flex flex-col justify-center">
@@ -85,7 +121,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex" ref={testEngineerRef}>
         <div className="mt-10 flex flex-col justify-center">
           <h3 className="font-bold">Test Engineer at Micross</h3>
           <p>
@@ -101,22 +137,31 @@ const AboutPage = () => {
         <Lottie animationData={testengineer} className="" />
       </div>
 
-      <div className="flex space-x-7 w-full px-4 md:px-8">
+      <div className="flex space-x-7 w-full px-0 md:px-8">
         <Lottie animationData={university} />
         <div className="flex flex-col justify-center ml-8">
           <h2 className="text-xl md:text-2xl font-semibold my-4">
             Laying the Foundation
           </h2>
-          <div className="mb-6">
+
+          <div className="hidden md:block mb-6">
             <h3 className="font-bold">University of Central Florida</h3>
             <p>Bachelor Degree in Electrical Engineering</p>
             <h3 className="font-bold">University of Central Florida</h3>
-            <p>Full Stack Web Developement Certification</p>
+            <p>Full Stack Web Development Certification</p>
+          </div>
+
+          {/* mobile */}
+          <div className="md:hidden mb-6">
+            <h3 className="font-bold">University of Central Florida</h3>
+            <p>B.S.E.E</p>
+            <h3 className="font-bold mt-2">University of Central Florida</h3>
+            <p>Full Stack Web Dev Cert</p>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly flex-wrap">
         <div className="flex flex-col space-y-2 mr-20">
           <h2 className="text-xl md:text-2xl font-semibold my-4">
             Looking Ahead
