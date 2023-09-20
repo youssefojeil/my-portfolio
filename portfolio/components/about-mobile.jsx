@@ -102,15 +102,18 @@ const AboutMobile = () => {
         <Lottie animationData={blockchain} />
       </div>
 
-      <h2 className="my-4 text-xl md:text-2xl font-semibold">
+      <h2 className="mt-8 text-xl md:text-2xl font-semibold">
         Before That...Electrical Engineering
       </h2>
 
-      <div className="flex md:my-8" ref={productEngineerRef}>
-        <Lottie animationData={productengineer} className="w-[400px] mt-10" />
-
+      <div className="flex items-center space-x-3">
+        <h3 className="font-bold">Product Engineer II - Honeywell</h3>
+        <div className="flex h-40">
+          <Lottie animationData={productengineer} className="w-[100px]" />
+        </div>
+      </div>
+      <div className="flex" ref={productEngineerRef}>
         <div className="flex flex-col justify-center">
-          <h3 className="font-bold">Product Engineer at Honeywell</h3>
           <p>
             As a Product engineer, for two years, I collaborated with diverse
             teams, ensuring my products transitioned smoothly from design to
@@ -120,7 +123,7 @@ const AboutMobile = () => {
         </div>
       </div>
 
-      <div className="flex space-x-8 items-center justify-center">
+      <div className="flex space-x-8 items-center ">
         <h3 className="font-bold">Test Engineer - Micross</h3>
         <div className="flex h-40">
           <Lottie animationData={testengineer} className="w-[100px]" />
