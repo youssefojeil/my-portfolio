@@ -137,7 +137,7 @@ const AboutMobile = () => {
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold my-4">Laying the Foundation</h2>
+        <h2 className="text-xl font-semibold my-6">Laying the Foundation</h2>
 
         <div className="flex w-full">
           <div className="w-40">
@@ -154,34 +154,38 @@ const AboutMobile = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly">
-        <div className="flex flex-col space-y-2 mr-20">
-          <h2 className="text-xl md:text-2xl font-semibold my-4">
-            Looking Ahead
-          </h2>
-          <p>
-            With a diverse background spanning electrical engineering,
-            full-stack development, and blockchain I am poised to contribute
-            meaningfully to any team. My experiences have not only equipped me
-            with a broad skill set but have also instilled in me a unique
-            perspective on problem-solving and innovation.
-          </p>
-          <p className="mb-6">
-            Curiosity and continuous learning are at my core. I actively seek
-            opportunities to further develop my skills and stay updated with the
-            latest technological advancements. Collaborating with peers and
-            learning from their expertise is something I value immensely, as it
-            enriches my own understanding and approach.
-          </p>
-          <p>
-            Given my experiences, adaptability, and commitment to excellence, I
-            am confident in my ability to deliver significant value in any role.
-            I am eager to take on challenges that push the boundaries of what's
-            possible and to work alongside teams that share this ambition.
-          </p>
+
+      <div>
+        <h2 className="text-xl font-semibold mt-4">Looking Ahead</h2>
+        <div className="flex justify-center h-40">
+          <Lottie animationData={future} className="w-[200px]" />
         </div>
 
-        <Lottie animationData={future} className="" />
+        <div className="flex">
+          <div className="flex flex-col space-y-2">
+            <p>
+              With a diverse background spanning electrical engineering,
+              full-stack development, and blockchain I am poised to contribute
+              meaningfully to any team. My experiences have not only equipped me
+              with a broad skill set but have also instilled in me a unique
+              perspective on problem-solving and innovation.
+            </p>
+            <p className="mb-6">
+              Curiosity and continuous learning are at my core. I actively seek
+              opportunities to further develop my skills and stay updated with
+              the latest technological advancements. Collaborating with peers
+              and learning from their expertise is something I value immensely,
+              as it enriches my own understanding and approach.
+            </p>
+            <p>
+              Given my experiences, adaptability, and commitment to excellence,
+              I am confident in my ability to deliver significant value in any
+              role. I am eager to take on challenges that push the boundaries of
+              what's possible and to work alongside teams that share this
+              ambition.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
