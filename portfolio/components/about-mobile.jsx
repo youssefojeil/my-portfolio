@@ -136,30 +136,24 @@ const AboutMobile = () => {
         <Lottie animationData={testengineer} className="" />
       </div>
 
-      <div className="flex space-x-7 w-full px-0 md:px-8">
-        <Lottie animationData={university} />
-        <div className="flex flex-col justify-center ml-8">
-          <h2 className="text-xl md:text-2xl font-semibold my-4">
-            Laying the Foundation
-          </h2>
+      <div>
+        <h2 className="text-xl font-semibold my-4">Laying the Foundation</h2>
 
-          <div className="hidden md:block mb-6">
-            <h3 className="font-bold">University of Central Florida</h3>
-            <p>Bachelor Degree in Electrical Engineering</p>
-            <h3 className="font-bold">University of Central Florida</h3>
-            <p>Full Stack Web Development Certification</p>
+        <div className="flex w-full">
+          <div className="w-40">
+            <Lottie animationData={university} />
           </div>
 
-          {/* mobile */}
-          <div className="md:hidden mb-6">
-            <h3 className="font-bold">University of Central Florida</h3>
-            <p>B.S.E.E</p>
-            <h3 className="font-bold mt-2">University of Central Florida</h3>
-            <p>Full Stack Web Dev Cert</p>
+          <div className="flex flex-col justify-center ml-8">
+            <div className="md:hidden mb-6">
+              <h3 className="font-bold">University of Central Florida</h3>
+              <p>B.S.E.E</p>
+              <h3 className="font-bold mt-2">University of Central Florida</h3>
+              <p>Full Stack Web Dev Cert</p>
+            </div>
           </div>
         </div>
       </div>
-
       <div className="flex justify-evenly">
         <div className="flex flex-col space-y-2 mr-20">
           <h2 className="text-xl md:text-2xl font-semibold my-4">
