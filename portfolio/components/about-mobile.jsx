@@ -120,9 +120,14 @@ const AboutMobile = () => {
         </div>
       </div>
 
+      <div className="flex space-x-8 items-center justify-center">
+        <h3 className="font-bold">Test Engineer - Micross</h3>
+        <div className="flex h-40">
+          <Lottie animationData={testengineer} className="w-[100px]" />
+        </div>
+      </div>
       <div className="flex" ref={testEngineerRef}>
-        <div className="mt-10 flex flex-col justify-center">
-          <h3 className="font-bold">Test Engineer at Micross</h3>
+        <div className="flex flex-col justify-center">
           <p>
             I began my engineering career as a Test Engineer. I designed
             hardware interface board schematics and developed test programs for
@@ -133,7 +138,6 @@ const AboutMobile = () => {
             tester, which led to a 99% savings in test time.
           </p>
         </div>
-        <Lottie animationData={testengineer} className="" />
       </div>
 
       <div>
