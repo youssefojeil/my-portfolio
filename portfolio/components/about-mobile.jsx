@@ -65,12 +65,16 @@ const AboutMobile = () => {
         </p>
       </div>
 
+      <div className="flex items-center space-x-3">
+        <h3 className="text-xl font-semibold my-2">Full Stack Web Developer</h3>
+
+        <div className="flex h-40">
+          <Lottie animationData={webdev} />
+        </div>
+      </div>
+
       <div className="flex" ref={fullStackRef}>
-        <Lottie animationData={webdev} />
-        <div className="px-4 flex flex-col justify-center">
-          <h3 className="text-xl md:text-2xl font-semibold my-4">
-            Full Stack Web Developer
-          </h3>
+        <div className=" flex flex-col justify-center">
           <p>
             After Lostboy, my love for development led me to the University of
             Central Florida once again. This time, I completed a Full Stack Web
@@ -83,11 +87,17 @@ const AboutMobile = () => {
         </div>
       </div>
 
-      <div className="flex " ref={web3Ref}>
+      <div className="flex items-center space-x-3">
+        <h2 className="text-xl md:text-2xl font-semibold my-4 " ref={web3Ref}>
+          Web3 Enthusiast
+        </h2>
+        <div className="flex h-40">
+          <Lottie animationData={blockchain} />
+        </div>
+      </div>
+
+      <div className="flex ">
         <div className="flex flex-col justify-center">
-          <h2 className="text-xl md:text-2xl font-semibold my-4 ">
-            Web3 Enthusiast
-          </h2>
           <h3 className="font-bold">Lostboy: A Web3 Startup</h3>
           <p>
             Venturing into the entrepreneurial world, I co-founded Lostboy.
@@ -99,7 +109,6 @@ const AboutMobile = () => {
             to enjoy.
           </p>
         </div>
-        <Lottie animationData={blockchain} />
       </div>
 
       <h2 className="mt-8 text-xl md:text-2xl font-semibold">
@@ -107,12 +116,14 @@ const AboutMobile = () => {
       </h2>
 
       <div className="flex items-center space-x-3">
-        <h3 className="font-bold">Product Engineer II - Honeywell</h3>
+        <h3 className="font-bold" ref={productEngineerRef}>
+          Product Engineer II - Honeywell
+        </h3>
         <div className="flex h-40">
           <Lottie animationData={productengineer} className="w-[100px]" />
         </div>
       </div>
-      <div className="flex" ref={productEngineerRef}>
+      <div className="flex">
         <div className="flex flex-col justify-center">
           <p>
             As a Product engineer, for two years, I collaborated with diverse
@@ -124,12 +135,14 @@ const AboutMobile = () => {
       </div>
 
       <div className="flex space-x-8 items-center ">
-        <h3 className="font-bold">Test Engineer - Micross</h3>
+        <h3 className="font-bold" ref={testEngineerRef}>
+          Test Engineer - Micross
+        </h3>
         <div className="flex h-40">
           <Lottie animationData={testengineer} className="w-[100px]" />
         </div>
       </div>
-      <div className="flex" ref={testEngineerRef}>
+      <div className="flex">
         <div className="flex flex-col justify-center">
           <p>
             I began my engineering career as a Test Engineer. I designed
