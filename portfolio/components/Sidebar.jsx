@@ -2,10 +2,11 @@
 
 import { cn } from '@/lib/utils';
 import {
-  LayoutDashboard,
+  Code2,
   MessageSquare,
-  ImageIcon,
-  VideoIcon,
+  ScrollText,
+  PersonStanding,
+  Home,
 } from 'lucide-react';
 import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
@@ -17,25 +18,25 @@ const montserrat = Montserrat({ weight: '600', subsets: ['latin'] });
 const routes = [
   {
     label: 'Home',
-    icon: LayoutDashboard,
+    icon: Home,
     href: '/',
     color: 'text-sky-500',
   },
   {
     label: 'About Me',
-    icon: MessageSquare,
+    icon: PersonStanding,
     href: '/about-me',
     color: 'text-violet-500',
   },
   {
     label: 'Projects',
-    icon: ImageIcon,
+    icon: Code2,
     href: '/projects',
     color: 'text-pink-700',
   },
   {
     label: 'Resume',
-    icon: VideoIcon,
+    icon: ScrollText,
     href: '/resume',
     color: 'text-orange-700',
   },
@@ -45,15 +46,15 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="space-y-4 py-4 flex flex-col h-full bg-[#292b2b] text-white">
+    <div className="space-y-4 py-4 flex flex-col h-full bg-[#1b1d1d] text-white">
       <div className="px-3 py-2 flex-1">
-        <Link href="/" className="flex items-center pl-3 mb-14">
-          <h1 className={cn('text-2xl font-bold', montserrat.className)}>
+        <Link href="/" className="flex items-center pl-3 mt-4 mb-14">
+          <h1 className={cn('text-xl font-bold', montserrat.className)}>
             Explore My Website
           </h1>
         </Link>
 
-        <div className="space-y-1">
+        <div className="space-y-6 flex flex-col h-full">
           {routes.map((route) => (
             <Link
               href={route.href}
